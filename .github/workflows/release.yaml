@@ -44,7 +44,7 @@ jobs:
       contents: read
       packages: write
     env:
-      BRANCH: ${{ inputs.version || needs.version.outputs.version }}
+      VERSION: ${{ inputs.version || needs.version.outputs.version }}
 
     steps:
       - name: Checkout
